@@ -2,11 +2,13 @@ package LibrarySystem.src;
 
 public class BookManager implements BookServices {
     Book[] books = new Book[3];
+    int count=0;
 
 
     @Override
     public void add(Book book) {
         books[0] = book;
+        count++;
         System.out.println("Kitab elave olundu");
     }
 
